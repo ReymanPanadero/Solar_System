@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Solar System's Celestial Bodies</title>
+</head>
+
+<style>
+img{
+border-style: inset outset;
+border-color: purple;	
+border-witdh: 20px;
+border-radius: 25px;
+}
+
+	
+	
+
+
+
+
+</style>
+
+
+
+<body>
+
+	<center><h1>{ Solar System's Celestial Bodies }</h1></center>
+<hr color="lightpurple">
+<marquee>	{☿}  {♀}  {🜨}  {♂}  {♃}  {♄}  {⛢}  {♆}  	{☿}  {♀}  {🜨}  {♂}  {♃}  {♄}  {⛢}  {♆}  	{☿}  {♀}  {🜨}  {♂}  {♃}  {♄}  {⛢}  {♆}  </marquee>
+<hr color="lightpurple">	
+
+<br>
+<br>
+
+<div>
+<button onclick="typeWriter()">Press To Read </button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Lorem ipsum dummy text blabla.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+<center>
+<img src="Mars4.jpg" width="500px" height="550px">
+</center>
+</div>
+
+
+<a href="Solar.html">Home</a>
+<a href="Mercury.html">Mercury</a>
+<a href="Venus.html">Venus</a>
+<a href="Earth.html">Earth</a>
+<a href="Mars.html">Mars</a>
+<a href="Jupiter.html">Jupiter</a>
+<a href="Saturn.html">Saturn</a>
+<a href="Uranus.html">Uranus</a>
+<a href="Neptune.html">Neptune</a>
+
+
+</body>
+</html>
