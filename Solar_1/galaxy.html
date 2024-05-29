@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Galaxies🌌</title>
+</head>
+
+<style>
+.button {
+  border-radius: 15px;
+  padding: 16px 32px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif; 
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: aliceblue; 
+  color: black; 
+  border: 2px solid #65049C;
+  border-width: 10px;
+  border-style: inset outset;
+  text-decoration: line-through;
+}
+
+.button1:hover {
+  background-color: #04AA6D;
+  color: white;
+  border-width: 5px;
+}
+
+.button2 {
+  background-color: aliceblue; 
+  color: black; 
+  border: 2px solid #65049C;
+  border-width: 10px;
+  border-style: inset outset;
+    text-decoration: line-through;
+}
+
+.button2:hover {
+  background-color: darkgrey;
+  color: white;
+  border-width: 5px;
+}
+
+
+body {
+  font-family: "Times New Roman", sans-serif;
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #6D5066;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #3A0427;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: purple;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+audio{
+border-style: inset outset;
+border-color: #e799ff;
+float: right;
+border-radius: 15px;
+color: #00FF00;
+background-color: green;
+height: 40px;
+
+}
+#demo{
+color: #29083B;
+background-color: white;
+opacity: 0.9;
+border-style: inset outset;
+Margin: 10;
+margin-left: 50px;
+margin-right: 50px;
+padding: 20px;
+font-family: monoscope;
+font-size: 25px;
+
+}
+
+body{
+background-image: url("gall.gif");
+ background-repeat: no-repeat;
+  background-size: cover;
+ background-attachment: fixed;
+ }
+
+#dem{
+color: #C5F8FC;
+font-size: 20px;
+margin: 10px;
+ 
+}
+
+button{
+border-style: inset outset;
+border-color: lightblue;
+background-color: ;
+font-size: 20px;
+font-family: "Times New Roman", Times, serif; 
+padding: 16px 32px;
+cursor: pointer;
+border-width: 5px;
+}
+</style>
+
+
+
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home🏡</a>
+  <br>
+  <hr>
+  <a href="index.html">Planets🪐</a>
+  <a href="comits.html">Comets☄️</a>
+  <a href="galaxy.html">Galaxies🌌</a>
+  <br>
+  <hr>
+   <a href="resu.html">Webpage Developer⚙️</a>
+  <a href="https://www.facebook.com/reyman.panaderz">Contact📞</a>
+</div>
+
+
+
+<span style="font-size:30px;cursor:pointer; color:#EC360F; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+
+<audio controls loop autoplay>
+<source src="Space.mp3" type="audio/mp3">
+</audio>
+
+
+<p id="dem"></p>
+
+<script>
+const d = new Date();
+document.getElementById("dem").innerHTML = d;
+</script>
+
+	<center><h1> </h1></center>
+<hr color="lightpurple">
+<marquee><font color="#08F0DB">||| Galaxies🌌	||| Galaxies🌌 ||| Galaxies🌌 ||| Galaxies🌌 ||| Galaxies🌌 ||| Galaxies🌌 ||| Galaxies🌌 ||| Galaxies🌌 ||| Galaxies🌌 ||| Galaxies🌌 ||| Galaxies🌌 ||| Galaxies🌌 ||| Galaxies🌌 ||| Galaxies🌌 ||| Galaxies🌌 ||| Galaxies🌌 ||| Galaxies🌌</marquee>
+<hr color="lightpurple">
+
+<br>
+<br>
+<center>
+<div>
+<button onclick="typeWriter()"><i>Please Press! to Read Solar System's Celestial Bodies (Galaxies🌌)</i></button></div>
+<div id="rey">
+<p id="demo"></p>
+
+<script>
+
+var i = 0;
+var txt = 'A galaxy is a huge collection of gas, dust, and billions of stars and their solar systems. A galaxy is held together by gravity. Our galaxy, the Milky Way, also has a Supermasive Black hole in the middle. There are many galaxies besides ours, though. There are so many, we can’t even count them all yet! The Hubble Space Telescope looked at a small patch of space for 12 days and found 10,000 galaxies, of all sizes, shapes, and colors. Some scientists think there could be as many as One hundred billion galaxies in the universe. ';
+var speed = 20;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+</script>
+</div>
+</center>
+</div>
+
+<center>
+<button class="button button1"><a href="gal1.html"> The Milky Way Galaxy</a></button>
+<button class="button button2"><a href="gal2.html">The Andromeda Galaxy</a></button>
+</center>
+
+</body>
+
+</html>
