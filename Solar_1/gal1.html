@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> The Milky Way galaxy 🌌</title>
+</head>
+
+<style>
+img{
+border-style: inset outset;
+border-color: purple;	
+border-witdh: 20px;
+border-radius: 25px;
+}
+
+
+
+.button {
+  border-radius: 15px;
+  padding: 16px 32px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif; 
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: aliceblue; 
+  color: black; 
+  border: 2px solid #0E36EB;
+  border-width: 10px;
+  border-style: inset outset;
+  }
+
+.button1:hover {
+  background-color: lightblue;
+  color: white;
+  border-width: 5px;
+}
+
+.button2 {
+  background-color: aliceblue; 
+  color: black; 
+  border: 2px solid #0E36EB;
+  border-width: 10px;
+  border-style: inset outset;
+    text-decoration: line-through;
+}
+
+.button2:hover {
+  background-color: lightblue;
+  color: white;
+  border-width: 5px;
+}
+
+	
+body {
+  font-family: "Times New Roman", sans-serif;
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #6D5066;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #3A0427;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+audio{
+border-style: inset outset;
+border-color: #e799ff;
+float: right;
+border-radius: 15px;
+color: #00FF00;
+background-color: green;
+height: 40px;
+
+}
+#demo{
+color: #9A07EE;
+background-color: white;
+opacity: 0.9;
+border-style: inset outset;
+Margin: 10;
+margin-left: 50px;
+margin-right: 50px;
+padding: 20px;
+font-family: monoscope;
+font-size: 30px;
+
+}
+
+body{
+background-image: url("mill.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ }
+
+#dem{
+color: #C5F8FC;
+font-size: 20px;
+margin: 10px;
+ 
+}
+
+button{
+border-style: inset outset;
+border-color: lightblue;
+background-color: ;
+font-size: 20px;
+font-family: "Times New Roman", Times, serif; 
+padding: 16px 32px;
+cursor: pointer;
+border-width: 5px;
+}
+
+
+</style>
+
+<body>
+<div id="mySidenav" class="sidenav">
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home🏡</a>
+  <br>
+  <hr>
+  <br>
+  <a href="planets.html">Planets🪐</a>
+  <a href="comits.html">Comets☄️</a>
+  <a href="galaxy.html">Galaxies🌌</a>
+  <br>
+  <hr>
+  <br>
+  <a href="resu.html">Webpage Developer</a>
+  <a href="https://www.facebook.com/reyman.panaderz">Contact</a>
+</div>
+
+
+
+<span style="font-size:30px;cursor:pointer; color:#EC360F;" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+
+<audio controls loop autoplay>
+<source src="Space.mp3" type="audio/mp3">
+</audio>
+
+
+<p id="dem"></p>
+<body>
+<script>
+const d = new Date();
+document.getElementById("dem").innerHTML = d;
+</script>
+
+
+
+
+	<center><h1></h1></center>
+<hr color="lightpurple">
+<marquee> <font color="#08F0DB"> ||| Galaxies🌌	||| Galaxies🌌 ||| Galaxies🌌	||| Galaxies🌌 ||| Galaxies🌌	||| Galaxies🌌 ||| Galaxies🌌	||| Galaxies🌌 ||| Galaxies🌌	||| Galaxies🌌 ||| Galaxies🌌	||| Galaxies🌌 ||| Galaxies🌌	||| Galaxies🌌 ||| Galaxies🌌	||| Galaxies🌌 </font></marquee>
+<hr color="lightpurple">	
+
+<br>
+<br>
+
+<div>
+<button onclick="typeWriter()">Press To Read Milky Way Galaxy</button>
+
+<p id="demo"></p>
+<script>
+var i = 0;
+var txt = 'Like early explorers mapping the continents of our globe, astronomers are busy charting the spiral structure of our galaxy, the Milky Way. Using infrared images from NASAs Spitzer Space Telescope, scientists have discovered that the Milky Ways elegant spiral structure is dominated by just two arms wrapping off the ends of a central bar of stars. Previously, our galaxy was thought to possess four major arms. The annotated artists concept illustrates the new view of the Milky Way. The galaxys two major arms (Scutum-Centaurus and Perseus) can be seen attached to the ends of a thick central bar, while the two now-demoted minor arms (Norma and Sagittarius) are less distinct and located between the major arms. The major arms consist of the highest densities of both young and old stars; the minor arms are primarily filled with gas and pockets of star-forming activity. The artists concept also includes a new spiral arm, called the "Far-3 kiloparsec arm," discovered via a radio-telescope survey of gas in the Milky Way. This arm is shorter than the two major arms and lies along the bar of the galaxy. Our Sun lies near a small, partial arm called the Orion Arm, or Orion Spur, located between the Sagittarius and Perseus arms.';
+var speed = 10;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script
+</div>
+<center>
+<img src="mil.gif" width="500px" height="600px"> 
+</center>
+</div>
+
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+<center>
+<button class="button button1"><a href="gal1.html">The Milky Way galaxy</a></button>
+<button class="button button2"><a href="gal2.html">The Andromeda galaxy</a></button>
+</center>
+
+</body>
+</html>
